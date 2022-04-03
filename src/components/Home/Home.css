@@ -1,0 +1,15 @@
+.home-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px 25px;
+}
+.product-description{
+    text-align: center;
+}
+.product-image img{
+    height: 540px;
+    width: 100%;
+}
