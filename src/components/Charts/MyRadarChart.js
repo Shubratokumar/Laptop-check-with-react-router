@@ -1,15 +1,7 @@
 import React from "react";
-import {
-  LineChart,
-  Line,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend
-} from "recharts";
+import { RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,Radar,Legend, Tooltip} from "recharts";
 
-const MyLineChart = () => {
+const MyRadarChart = () => {
   const data = [
     {
       month: "Mar",
@@ -49,16 +41,28 @@ const MyLineChart = () => {
     },
   ];
   return (
-    <LineChart width={400} height={400} data={data}>
-      <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="month" height={60} />
-      <YAxis />
-      <Tooltip />
+    <RadarChart outerRadius={90} width={730} height={250} data={data}>
+      <PolarGrid />
+      <PolarAngleAxis dataKey="month" />
+      <PolarRadiusAxis angle={30} domain={[0, 150]} />
+      <Radar
+        name="Month"
+        dataKey="month"
+        stroke="#8884d8"
+        fill="#8884d8"
+        fillOpacity={0.6}
+      />
+      <Radar
+        name="Sell"
+        dataKey="sell"
+        stroke="#9900F0"
+        fill="#FDAF75"
+        fillOpacity={0.6}
+      />
       <Legend />
-      <Line type="monotone" dataKey="sell" stroke="#8884d8" />
-      <Line type="monotone" dataKey="investment" stroke="#A63EC5" />
-    </LineChart>
+      <Tooltip/>
+    </RadarChart>
   );
 };
 
-export default MyLineChart;
+export default MyRadarChart;
