@@ -1,9 +1,17 @@
 import React from 'react';
-
+import MyLineChart from '../Charts/MyLineChart';
+import './Dashboard.css'
 const Dashboard = () => {
     return (
-        <div>
-            <h3>this is Dashboard.</h3>
+        <div className='chart-container'>
+            <div className = 'monthly-sell'>
+                <h3 className='title'>Sells VS Investment</h3>
+                <MyLineChart></MyLineChart>
+            </div>
+            <div className='invest-revenue'>
+                <h3>Revenue VS Investment</h3>
+                
+            </div>
         </div>
     );
 };
