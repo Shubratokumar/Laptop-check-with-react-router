@@ -1,0 +1,13 @@
+.reviewer{
+    border-radius: 25px;
+    border: 2px solid cyan;
+}
+.reviewer-image img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+.reviewer-description{
+    margin: 10px 0;
+}

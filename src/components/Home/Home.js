@@ -1,9 +1,16 @@
-import React from 'react';
+
+import { useNavigate } from 'react-router-dom';
 import image from "../../assets/images/hero__blumt6ne3xn6_large.jpg";
+import useReview from '../../hooks/useReview';
+import Reviews from '../Reviews/Reviews';
 import './Home.css';
 
 const Home = () => {
+    const navigate = useNavigate();
+    const [reviews] = useReview([])
+
     return (
+        <>
         <div className='home-container'>
             <div className='product-description'>
                 <h2>This is Mackbook Air</h2>
@@ -16,6 +23,19 @@ const Home = () => {
                 <img src={image} alt="" />
             </div>
         </div>
+        <div className='reviews-container'>
+            <h3>Customer Reviews({reviews.length})</h3>
+            <div className = 'review-container'>
+                {
+                    reviews.map(review => <Reviews 
+                        review = {review}
+                        key = {review.id}
+                         ></Reviews>)
+                }
+            </div>
+            <button onClick = {() => navigate('/allreviews')}>See All Reviews</button>
+        </div>
+        </>
     );
 };
 
