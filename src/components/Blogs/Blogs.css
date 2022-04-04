@@ -1,0 +1,24 @@
+.qa-container{
+    text-align: center;
+
+}
+.blogs-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.blog-container{
+    border: 2px solid rgb(253, 144, 94);
+    border-radius: 20px;
+    padding: 15px;
+    background-color: aquamarine;
+}
+.blog-container h4{
+    margin-bottom: 10px;
+}
+.blog-container p{
+    text-align: justify;
+}
+.answer{
+    color: aqua;
+}

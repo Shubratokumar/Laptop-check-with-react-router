@@ -15,7 +15,7 @@ const Home = () => {
             <div className='product-description'>
                 <h2>This is Mackbook Air</h2>
                 <h4>Your next Mackbook</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur vel maiores consequuntur. Placeat distinctio nisi vero? Quos quae unde placeat, corrupti commodi culpa laborum, incidunt accusantium, dolor debitis rerum voluptate...</p>
+                <p>Easy to learn. Astoundingly powerful. And designed to let you work, play, and create in entirely new ways. It’s the computer that comes packed with apps that are ready to go, right out of the box. Free, regular software updates mean it’s always running at it’s best, and always getting better. ...</p>
                 <button className='product-btn'>Why Mac</button>
 
             </div>
