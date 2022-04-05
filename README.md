@@ -1,6 +1,6 @@
 # Laptop Ckeck
 
-Live site : 
+Live site : https://laptop-check-with-react-router.netlify.app/
 
 ### Website Features
 - Laptop Check is a react.js web app.
