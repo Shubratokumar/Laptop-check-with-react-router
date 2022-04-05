@@ -4,7 +4,7 @@ import './Blogs.css';
 const Blogs = () => {
     return (
         <div className='qa-container'>
-            <h2>Question and Answer :</h2>
+            <h2 className='title'>Question and Answer :</h2>
             <div className='blogs-container'>
                 <div className='blog-container'>
                     <h4 className='question'>Q - 01: What is Context API ?</h4>
@@ -17,7 +17,11 @@ const Blogs = () => {
                 </div>
                 <div className='blog-container'>
                 <h4 className='question'>Q - 03: Difference between inline, block and inline-block elements.</h4>
-                    <p><span className='answer'>Answer : </span></p>
+                    <p><span className='answer'>Answer : </span>
+                    Inline Element : Displays an element as an inline element. Any height and width properties will have no effect. The display property specifics the display behavior of an element. It’s a must know for controlling the layout of an element. Here are a few elements that have a default inline property: span, a, img; <br /> <br />
+                    Block Element : Block element check the length of the string. It is just opposite of inline element. Inline elements appears on the same line but the Block elements starts on a new line and takes up the full width available. Here are a few elements that have a default block property: div, li, p, section, h1; <br /> <br/>
+                    Inline-Block Element : Inline-Block element displays an element as an inline-level block container. We can set set height and width values.  It’s essentially the same thing as inline, except that we can set height and width values.                    
+                    </p>
                 </div>
             </div>
         </div>

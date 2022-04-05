@@ -1,6 +1,10 @@
 .qa-container{
     text-align: center;
-
+    margin: 0 20px;
+    padding: 20px;
+}
+.title{
+    margin-bottom: 10px;
 }
 .blogs-container{
     display: grid;
@@ -8,10 +12,10 @@
     gap: 20px;
 }
 .blog-container{
-    border: 2px solid rgb(253, 144, 94);
+    border: 2px solid rgb(35, 252, 223);
     border-radius: 20px;
     padding: 15px;
-    background-color: aquamarine;
+    background-color: rgb(255, 250, 174);
 }
 .blog-container h4{
     margin-bottom: 10px;
@@ -20,5 +24,5 @@
     text-align: justify;
 }
 .answer{
-    color: aqua;
+    color: rgb(174, 0, 255);
 }
