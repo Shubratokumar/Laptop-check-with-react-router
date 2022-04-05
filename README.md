@@ -12,5 +12,7 @@ Live site :
 - Used React Rechart to show the chart at dashboard.
 - Home : Has one product description and 3 customer reviews at bottom. There is a button on bottom of home to navigate from home to reviews section.
 - After clicking see all reviews buttom navigate to the reviews section and also show all reviews about the product.
+- In dashboard you will see 4 fancy charts. That chart is used from rechart.
 - Has a fancy 404 page. 
 - 404 page will show when Route does't matched.
+- In reviews section you will see all customer reviews. 

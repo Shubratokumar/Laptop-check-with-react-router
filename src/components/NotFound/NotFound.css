@@ -3,3 +3,10 @@
     align-items: center;
     justify-content: space-around;
 }
+
+/* ==================== Responsive for Mobile devices =============== */
+@media only screen and (max-width: 600px){
+    .error-container{
+        flex-direction: column;
+    }
+}

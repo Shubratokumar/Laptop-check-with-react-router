@@ -41,7 +41,7 @@ const MyRadarChart = () => {
     },
   ];
   return (
-    <RadarChart outerRadius={90} width={730} height={250} data={data}>
+    <RadarChart outerRadius={90} width={590} height={400} data={data}>
       <PolarGrid />
       <PolarAngleAxis dataKey="month" />
       <PolarRadiusAxis angle={30} domain={[0, 150]} />
