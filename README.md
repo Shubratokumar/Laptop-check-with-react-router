@@ -1,4 +1,4 @@
-# Laptop Ckeck
+# Laptop Check
 
 Live site : https://laptop-check-with-react-router.netlify.app/
 

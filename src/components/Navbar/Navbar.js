@@ -7,7 +7,7 @@ const Navbar = () => {
         <nav className='navbar'>
             
             <div className='title-container'>
-            <h1>Laptop Ckeck</h1>
+            <h1>Laptop Check</h1>
             </div>
             <div className='link-container'>
                 <NavLink className={({ isActive }) => (isActive ? "active-link" : "link")}
